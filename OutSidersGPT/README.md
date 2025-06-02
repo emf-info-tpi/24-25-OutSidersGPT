@@ -31,6 +31,8 @@ Allez dans **Models**, cliquez sur le bouton + Add Model et installez **Llama 3.
 
 Dans les **Settings** de l'application, veuillez rendre disponible l'API (Enable Local API Server) et vérifier que le port (API Server Port) est bien **4891**.
 
+![settings](./readme_images/GPT4All_Settings.png)
+
 Ensuite allez dans **LocalDocs**, cliquez sur le bouton + Add Doc Collection, nommez le OutSidersDoc et sélectionnez le chemin des fichiers de référence.
 **Attention** : les documents doivent être stockés en local sur votre ordinateur.
 Cliquez sur create collection.
@@ -38,6 +40,7 @@ Cliquez sur create collection.
 L'étape suivante est à faire **à chaque redémarrage de l'application GPT4All**
 Rendez-vous dans la partie **Chats**, et sélectionnez Server Chat.
 En haut à droite, cliquez sur le bouton LocalDocs, puis sélectionnez la collection OurSidersDoc.
+![liaison doc](./readme_images/liaison_doc_gpt.png)
 
 Parfait, maintenant GPT4All est prêt.
 
@@ -52,11 +55,15 @@ Le fichier a pour nom **wamperserver3.3.0_89.exe**
 Exécutez le .exe, suivez les étapes en cliquant sur Suivant et acceptez la licence.
 Lancez ensuite le serveur WampServer. Une popup devrait apparaître et indiquera quand le serveur sera lancé.
 Dans le menu Démarrer, une icône de W en vert devrait être apparue.
+![wamp](./readme_images/logo_Wamp.png)
 
 ## Installation de la base de données
 Cliquez sur l'icone W verte et cliquez sur **PHPMyAdmin**, cela devrait ouvrir une page web, si cela ne s'ouvre pas, allez sur ce [lien](http://localhost/phpmyadmin/)
 Le nom d'utilisateur est root et il n'y a pas de mot de passe.
 Cliquez sur **Nouvelle base de données**, donnez-lui le nom de **mydb** et mettez l'interclassement **utf8_general_ci**.
+
+![db](./readme_images/création_db.png)
+
 Allez ensuite sur l'onglet importer.
 
 Sélectionnez le ficher du GitHub qui est sous doc et qui s'appelle **DB.sql** puis cliquez sur importer.
