@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>OutSidersGPT</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <button class="new-discussion" onclick="startNewConversation()">+ Nouvelle discussion</button>
+      <hr>
+      <div class="discussions">
+        <a href="#">Discussion </a>
+
+      </div>
+      <div class="bottom-section">
+
+        <button class="new-gpt">Nouveau GPT</button>
+      </div>
+    </aside>
+
+    <main class="chat-panel">
+      <h1>OutSidersGPT</h1>
+      <div class="chat-container" id="chat"></div>
+      <div class="input-area">
+        <input type="text" id="prompt" placeholder="Posez votre question ici...">
+        <button onclick="sendPrompt()">Envoyer</button>
+      </div>
+    </main>
+  </div>
+
+  <div id="gptModal" class="modal">
+    <div class="modal-content">
+      <h2>Créer un nouveau GPT personnalisé</h2>
+      <label for="gptNameInput">Nom du GPT :</label>
+      <input type="text" id="gptNameInput" placeholder="Nom du GPT">
+  
+      <label for="gptSystemInput">Message système (optionnel) :</label>
+      <textarea id="gptSystemInput" placeholder="Ex. : Tu es un expert en droit international..."></textarea>
+  
+      <div class="modal-buttons">
+        <button id="saveGptBtn">Sauvegarder</button>
+        <button id="cancelGptBtn">Annuler</button>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+  <script src="./js/app.js"></script>
+
+</body>
+</html>
